@@ -2,11 +2,13 @@ package com.bookwiki;
 
 import android.app.Activity;
 import android.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 
-public class BookWikiActivity extends Activity
+public class BookWikiActivity extends ActionBarActivity
 {
     /** Called when the activity is first created. */
     @Override
@@ -14,8 +16,9 @@ public class BookWikiActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
-        ActionBar actionBar = getActionBar();
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (toolbar != null)
+            setSupportActionBar(toolbar);
     }
 
     @Override
