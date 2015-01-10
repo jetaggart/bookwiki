@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.1'
+        classpath 'com.android.tools.build:gradle:1.0.0'
     }
 }
 apply plugin: 'android'
@@ -12,10 +12,23 @@ android {
     compileSdkVersion 'android-21'
     buildToolsVersion '21.1.2'
 
+    defaultConfig {
+      minSdkVersion 18
+      targetSdkVersion 21
+    }
+
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFile getDefaultProguardFile('proguard-android.txt')
         }
     }
+}
+
+dependencies {
+  compile "com.android.support:appcompat-v7:21.0+"
+}
+
+task buildit(dependsOn: 'installDebug', type: Exec) {
+  commandLine "./debug-run"
 }
