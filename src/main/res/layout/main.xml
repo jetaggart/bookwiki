@@ -33,6 +33,11 @@
       android:tint="@android:color/white"
       android:elevation="@dimen/elevation_low"
       android:background="@drawable/oval"
-      android:src="@drawable/ic_action_new"/>
+      android:src="@drawable/ic_action_new"
+      android:paddingBottom="1dp"
+      android:paddingLeft="1dp"
+      android:paddingRight="1dp"
+      android:paddingTop="1dp" />
+
 
 </FrameLayout>
