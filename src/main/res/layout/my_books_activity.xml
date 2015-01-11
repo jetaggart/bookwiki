@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="14dp"
         android:layout_marginRight="14dp"
-        android:text="You have no added books. Please click add to add some."
+        android:text="You have no books. Please search to add some."
         />
   </LinearLayout>
 
@@ -40,7 +40,8 @@
       android:paddingBottom="1dp"
       android:paddingLeft="1dp"
       android:paddingRight="1dp"
-      android:paddingTop="1dp" />
+      android:paddingTop="1dp"
+      android:onClick="searchBooks"/>
 
 
 </FrameLayout>
