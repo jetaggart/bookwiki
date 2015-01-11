@@ -9,6 +9,8 @@ public class BookSearchActivity extends LoginRequiredActivity {
         setContentView(R.layout.book_search_activity);
 
         super.onCreate(savedInstanceState);
+
+        getSupportActionBar().setTitle("Search for Books");
     }
 
 }
