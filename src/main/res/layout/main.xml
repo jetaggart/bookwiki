@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+
   <LinearLayout
       android:orientation="vertical"
       android:layout_width="match_parent"
@@ -19,7 +20,9 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="You have no added books"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:text="You have no added books. Please click add to add some."
         />
   </LinearLayout>
 
@@ -33,7 +36,7 @@
       android:tint="@android:color/white"
       android:elevation="@dimen/elevation_low"
       android:background="@drawable/oval"
-      android:src="@drawable/ic_action_new"
+      android:src="@drawable/ic_action_search"
       android:paddingBottom="1dp"
       android:paddingLeft="1dp"
       android:paddingRight="1dp"

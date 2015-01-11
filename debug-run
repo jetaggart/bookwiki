@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 set -e
-adb shell am start -a android.intent.action.MAIN -n com.bookwiki/.BookWikiActivity
+adb shell am start -a android.intent.action.MAIN -n com.bookwiki/.MyBooksActivity
